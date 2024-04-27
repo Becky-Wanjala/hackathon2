@@ -1,0 +1,51 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css'%}"}">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>WoofZone</h1>
+   <h2> Welcome to WoofZone, where every tail wags with joy!<br>
+     Your Ultimate Destination for Canine Comfort!</h2>
+    
+    <p>Below are the dogs  availabe.</p><br>
+    {{result}}
+    <img src={{result}} alt="random dogs"><br>
+     <form id="dog-form" action="#" method="post">
+    <label for="dog"">Choose a dog:</label>
+
+    <select id="dog" name="dog">
+      <option value="">Select a dog breed...</option>
+      <option value="labrador">Labrador Retriever</option>
+      <option value="german-shepherd">German Shepherd</option>
+      <option value="golden-retriever">Golden Retriever</option>
+      <option value="bulldog">Bulldog</option>
+      <option value="beagle">Beagle</option>
+      <option value="poodle">Poodle</option>
+      <option value="rottweiler">Rottweiler</option>
+      <option value="siberian-husky">Siberian Husky</option>
+      <option value="dachshund">Dachshund</option>
+      <option value="boxer">Boxer</option>
+      <option value="shih-tzu">Shih Tzu</option>
+      <option value="doberman">Doberman Pinscher</option>
+      <option value="great-dane">Great Dane</option>
+      <option value="yorkshire-terrier">Yorkshire Terrier</option>
+      <option value="border-collie">Border Collie</option>
+    </select><br>
+    <input type="submit" value="Submit">
+ </form>
+    <footer>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: info@dogtutors.com</p>
+        <p>Phone: 0757926223</p>
+        <p>Address: P.O BOX 237</p>
+      </div>
+    </footer>
+  </body>
+</html>
